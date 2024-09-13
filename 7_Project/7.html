@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form Design</title>
+    <link rel="stylesheet" href="7.css">
+</head>
+<body>
+    <h1>Simple Survey Form</h1>
+    <form action="#" method="post">
+        <!-- Text Input Fields -->
+        <label for ="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <!-- for better understanding of which data to put in which input field we're using label here. -->
+
+        <!-- Radio Buttons -->
+        <p>Gender:</p>
+        <div>
+            Male <input type="radio" id="male" name="gender" value="male">
+            Female <input type="radio" id="female" name="gender" value="female"> 
+            Other  <input type="radio" id="other" name="gender" value="other">
+        </div>
+
+        <!-- Checkboxes -->
+        <p>Interests:</p>
+        <div>
+            <p> Coding: 
+            <input type="checkbox" id="coding" name="interests" value="coding"></p>
+
+            <p>
+                Music :
+                <input type="checkbox" id="music" name="interests" value="music">
+            </p>
+
+            <p>
+                Sports:
+                <input type="checkbox" id="sports" name="interests" value="sports">
+            </p>
+        </div>
+        
+        <!-- Submit Button -->
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <footer class="footer">
+        <p>&copy; Created By Himani Gaire.</p>
+    </footer>
+</body>
+</html>
